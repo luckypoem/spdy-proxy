@@ -1,0 +1,16 @@
+{
+	"name":"spdy-proxy",
+	"debug":true,
+	"logLevel":"info",
+	"ssl":{
+		"cert":"spdy-proxy.crt",
+		"key":"spdy-proxy.key"
+	},
+	"proxy":{
+		"target":{
+	    "host": "74.125.232.247", 
+	    "port": 443,
+	    "https": true
+	  }
+	}
+}

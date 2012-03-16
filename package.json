@@ -1,0 +1,27 @@
+{
+  "name": "spdy-proxy",
+  "author": "Philipp Dunkel <phidelta@phideltacity.net>",
+  "version": "0.1.1",
+  "main": "./server.js",
+  "description": "A proxy you can use to enable SPDY for your site",
+  "keywords": [
+    "spdy",
+    "http",
+    "proxy"
+  ],
+  "dependencies": {
+    "simple-logging": "*",
+    "http-proxy": "0.8.0",
+    "http-unchunk-stack": "*",
+    "spdy": "1.2.0+"
+  },
+  "engines": [
+    "node ~ 0.7.0"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bin": {
+    "spdy-proxy": "./server.js"
+  }
+}
