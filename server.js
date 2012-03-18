@@ -105,7 +105,8 @@ function startWorker() {
 		url = require('url').format(url);
 		if (url.length > 79) url=url.substring(0, 79)+'…';
 		console.info((req.isSpdy ? 'SPDY ' : 'SSL  ') + url)
-		res = new UnchunkedResponse(res);
+		
+		if (req.isSpdy) res = new UnchunkedResponse(res);
 		return proxy.proxyRequest(req, res);
 	});
 	server.on('upgrade', function(req, socket, head) {

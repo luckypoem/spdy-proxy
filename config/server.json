@@ -2,6 +2,7 @@
 	"name":"spdy-proxy",
 	"debug":true,
 	"logLevel":"info",
+	"pidFile":"/Users/philipp/Desktop/sdpy-proxy.pid",
 	"ssl":{
 		"cert":"spdy-proxy.crt",
 		"key":"spdy-proxy.key"
